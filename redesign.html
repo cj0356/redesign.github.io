@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-gap: 10px;
+	font-family: Century Gothic, AppleGothic, sans-serif;
+}
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex: 1;
+  justify-content:space-around;
+  align-items: center;
+  background-color: #1c77ac;
+}
+.title {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex: 1;
+  justify-content:left;
+  align-items: left;
+  background-color: #1c77ac;
+}
+
+.nav > li {
+  flex: 1;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Merriweather';
+  font-size: 2em;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.nav> li a:hover {
+  background-color: #1dbab4;
+}
+.active {
+  background-color: #1dbab4;
+}
+
+
+.container {
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: space-around;
+  text-align: center;
+  color: white;
+}
+
+
+.centered {
+  color: black;
+  text-align: center;
+  font-size: 3em;
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: normal;
+
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: .25em .5em;
+}
+
+.buttons .btn1 {
+  background-color: #fc5226;
+  color: white;
+  font-size: 2em;
+  padding: .25em .5em;
+  border: none;
+  cursor: pointer;
+  border-radius: .25em;
+}
+
+.buttons .btn2 {
+  background-color: #fc5226;
+  color: white;
+  font-size: 2em;
+  padding: .25em .5em;
+  border: none;
+  cursor: pointer;
+  border-radius: .25em;
+}
+
+.buttons .btn1:hover {
+  background-color: orange;
+}
+.buttons .btn2:hover {
+  background-color: orange;
+}
+.responsive {
+  max-width: 75%;
+  height: auto;
+}
+
+</style>
+</head>
+<body>
+
+  <nav>
+    <ul class="title">
+      <img src="capitol.png" alt="Capitol" style="width:5%; height:5%">
+    <li><a>The City of Providence</a></li>
+  </ul>
+  </nav>
+
+  <nav>
+    <ul class="nav">
+      <li><a>Home</a></li>
+      <li><a>Make a Payment</a></li>
+      <li><a>View Tax Payment</a></li>
+    </ul>
+  </nav>
+
+
+<div class="container">
+  <img src="temp.jpg" alt="Capitol" class="responsive">
+</div>
+
+  <div class="centered">Welcome to Providence's Tax Payment System</div>
+  <div class="buttons">
+  <button class="btn1">Make a Tax Payment</button>
+  <button class="btn2">View Tax Statements</button>
+  </div>
+
+
+
+</body>
+</html>
